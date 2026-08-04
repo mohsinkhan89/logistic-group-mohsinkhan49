@@ -1,0 +1,2 @@
+prompt reference 001:
+    Update CSS for layout adjustments and responsiveness enhancements
