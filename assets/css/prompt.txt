@@ -18,3 +18,6 @@ prompt reference 006:
 
 prompt reference 007:
     update vision statement in index.html and adjust related content
+
+prompt reference 008:
+    update footer logo and adjust brand image size

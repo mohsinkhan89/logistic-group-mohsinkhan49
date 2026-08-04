@@ -5726,7 +5726,7 @@ h2,
 }
 
 .footer-brand img {
-  width: 92px !important;
+  width: 300px !important;
   height: auto !important;
   margin: 0 0 16px !important;
 }
@@ -5771,6 +5771,8 @@ h2,
   color: #dff7ff !important;
   background: rgba(139, 220, 255, 0.08) !important;
   font-size: 13px !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .footer-brand .socials a:hover {
