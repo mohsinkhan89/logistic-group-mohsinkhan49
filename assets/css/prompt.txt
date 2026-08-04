@@ -24,3 +24,6 @@ prompt reference 008:
 
 prompt reference 009:
     add modern styling for about section in light mode
+
+prompt reference 010:
+    enhance header and site-wide styles; update icons and animations for improved UI
