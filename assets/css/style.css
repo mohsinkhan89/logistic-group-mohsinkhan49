@@ -5261,7 +5261,7 @@ li,
 
   .ready-grid {
     min-height: 300px !important;
-    grid-template-columns: 0.95fr 1.05fr !important;
+    grid-template-columns: 0.45fr 1.05fr !important;
   }
 
   .split-info {
@@ -5429,4 +5429,15 @@ li,
     left: 12px !important;
     top: -18px !important;
   }
+}
+
+/* GLOBAL H2 FINAL */
+h2,
+.section-head h2,
+.about-copy h2,
+.ready h2,
+.project-copy h2,
+.testimonials h2 {
+  font-size: 35px !important;
+  font-weight: 600 !important;
 }
