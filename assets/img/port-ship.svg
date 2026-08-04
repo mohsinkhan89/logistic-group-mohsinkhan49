@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 450" preserveAspectRatio="xMidYMid slice">
+  <defs><linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#6fc4f1"/><stop offset=".42" stop-color="#d9f5ff"/><stop offset=".43" stop-color="#156b95"/><stop offset="1" stop-color="#064869"/></linearGradient></defs>
+  <rect width="360" height="450" fill="url(#sky)"/>
+  <path d="M0 210c76-22 139 23 208 7 52-12 91-38 152-12v245H0z" fill="#0f7ca7" opacity=".5"/>
+  <g transform="translate(58 258)">
+    <path d="M16 64h218l-18 35H42z" fill="#f0f5f9"/>
+    <rect x="44" y="16" width="98" height="48" fill="#f1672b"/>
+    <rect x="142" y="28" width="58" height="36" fill="#123958"/>
+    <rect x="86" y="0" width="66" height="16" fill="#f4b13c"/>
+    <rect x="98" y="-22" width="38" height="22" fill="#d9e8f2"/>
+    <circle cx="60" cy="82" r="8" fill="#063550"/><circle cx="190" cy="82" r="8" fill="#063550"/>
+  </g>
+  <g stroke="#d78527" stroke-width="7" fill="none"><path d="M55 184V80h62v104M240 186V66h65v120"/><path d="M36 116h101M220 100h107"/></g>
+  <g fill="#17364c"><rect x="0" y="194" width="360" height="16"/><rect x="36" y="166" width="82" height="28"/><rect x="212" y="155" width="105" height="39"/></g>
+</svg>

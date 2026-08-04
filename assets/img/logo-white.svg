@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 92" role="img" aria-labelledby="title desc">
+  <title id="title">M and A Logistics Group</title>
+  <desc id="desc">White stylized M and A logistics logo</desc>
+  <rect width="220" height="92" fill="none"/>
+  <g fill="#ffffff">
+    <path d="M22 64 55 16h22L61 64H45l11-31-22 31H22z"/>
+    <path d="M75 64 92 16h22l18 48h-21l-4-13H91l-4 13H75zm20-27h9l-4-14-5 14z"/>
+    <path d="M132 64 149 16h18l-10 31h35l-6 17h-54z"/>
+    <path d="M25 72h162v7H25z"/>
+    <path d="M32 58h13l13-37H45L32 58zm101 0h18l13-37h-18l-13 37z" fill="#8fcaff"/>
+  </g>
+</svg>
