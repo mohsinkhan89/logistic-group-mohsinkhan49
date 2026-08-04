@@ -21,3 +21,6 @@ prompt reference 007:
 
 prompt reference 008:
     update footer logo and adjust brand image size
+
+prompt reference 009:
+    add modern styling for about section in light mode
