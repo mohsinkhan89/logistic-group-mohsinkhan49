@@ -12,3 +12,6 @@ prompt reference 004:
  
 prompt reference 005:
     add modern footer design and update contact information in index.html
+
+prompt reference 006:
+    add modern portfolio and testimonials styles

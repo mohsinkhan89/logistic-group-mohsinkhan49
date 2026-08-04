@@ -5972,3 +5972,566 @@ h2,
   align-items: center !important;
   width: 100% !important;
 }
+
+/* MODERN PORTFOLIO + TESTIMONIALS */
+.projects,
+.testimonials {
+  position: relative !important;
+  overflow: hidden !important;
+  color: #eef9ff !important;
+  border-top: 1px solid rgba(139, 220, 255, 0.18) !important;
+}
+
+.projects {
+  padding: clamp(48px, 4.2vw, 68px) 0 !important;
+  background:
+    radial-gradient(circle at 15% 12%, rgba(98, 190, 239, 0.16), transparent 30%),
+    radial-gradient(circle at 92% 34%, rgba(69, 168, 223, 0.12), transparent 28%),
+    linear-gradient(180deg, #062f4b 0%, #04253b 56%, #031b2d 100%) !important;
+}
+
+.testimonials {
+  padding: clamp(54px, 4.8vw, 78px) 0 clamp(56px, 5vw, 82px) !important;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(98, 190, 239, 0.16), transparent 32%),
+    radial-gradient(circle at 82% 24%, rgba(69, 168, 223, 0.13), transparent 30%),
+    linear-gradient(180deg, #052d48 0%, #031f33 58%, #021724 100%) !important;
+}
+
+.projects::before,
+.testimonials::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px) !important;
+  background-size: 72px 72px !important;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.68), transparent 82%) !important;
+  pointer-events: none !important;
+}
+
+.projects::after,
+.testimonials::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(139, 220, 255, 0.7), transparent) !important;
+  pointer-events: none !important;
+}
+
+.projects .container,
+.testimonials .container {
+  position: relative !important;
+  z-index: 1 !important;
+  width: min(var(--site-container), calc(100% - var(--site-gutter))) !important;
+  max-width: var(--site-container) !important;
+}
+
+.project-grid {
+  display: grid !important;
+  grid-template-columns: minmax(260px, 0.42fr) 44px minmax(0, 1fr) 44px !important;
+  align-items: center !important;
+  gap: clamp(18px, 2.3vw, 34px) !important;
+}
+
+.project-copy {
+  padding: 24px !important;
+  border: 1px solid rgba(139, 220, 255, 0.18) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(145deg, rgba(8, 60, 92, 0.58), rgba(3, 28, 45, 0.4)) !important;
+  box-shadow: 0 22px 48px rgba(0, 8, 18, 0.2) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.project-copy .eyebrow,
+.testimonials .eyebrow {
+  margin: 0 0 8px !important;
+  color: #8bdcff !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  text-transform: uppercase !important;
+}
+
+.project-copy h2,
+.testimonials h2 {
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: 35px !important;
+  line-height: 1.04 !important;
+  font-weight: 600 !important;
+}
+
+.project-copy p:not(.eyebrow) {
+  max-width: 280px !important;
+  margin: 0 !important;
+  color: rgba(221, 241, 250, 0.82) !important;
+  font-size: 12px !important;
+  line-height: 1.55 !important;
+}
+
+.project-slider {
+  position: relative !important;
+  height: clamp(190px, 18vw, 250px) !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(139, 220, 255, 0.22) !important;
+  border-radius: 8px !important;
+  background: rgba(3, 26, 42, 0.52) !important;
+  box-shadow: 0 26px 58px rgba(0, 8, 18, 0.3) !important;
+}
+
+.project-slider::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 38%, rgba(2, 18, 31, 0.12)) !important;
+  pointer-events: none !important;
+}
+
+.project-slider img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.slider-btn,
+.review-nav {
+  display: grid !important;
+  place-items: center !important;
+  width: 42px !important;
+  height: 42px !important;
+  border: 1px solid rgba(139, 220, 255, 0.28) !important;
+  border-radius: 50% !important;
+  color: #dff7ff !important;
+  background: rgba(139, 220, 255, 0.1) !important;
+  box-shadow: 0 14px 30px rgba(0, 8, 18, 0.22) !important;
+  cursor: pointer !important;
+  transition: transform 0.22s ease, background 0.22s ease, color 0.22s ease !important;
+}
+
+.slider-btn:hover,
+.review-nav:hover {
+  color: #05243a !important;
+  background: #8bdcff !important;
+  transform: translateY(-3px) !important;
+}
+
+.testimonials .section-head {
+  align-items: flex-end !important;
+  margin: 0 0 28px !important;
+  padding: 0 !important;
+}
+
+.testimonials .section-head .btn {
+  min-height: 40px !important;
+  padding: 0 8px 0 20px !important;
+  border-color: rgba(139, 220, 255, 0.32) !important;
+  background: rgba(139, 220, 255, 0.08) !important;
+  color: #eef9ff !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.testimonials .section-head .btn span {
+  width: 28px !important;
+  height: 28px !important;
+  color: #05243a !important;
+  background: #8bdcff !important;
+}
+
+.reviews-shell {
+  position: relative !important;
+  padding: 0 52px !important;
+}
+
+.review-window {
+  overflow: hidden !important;
+}
+
+.review-grid {
+  display: flex !important;
+  gap: 22px !important;
+  transition: transform 0.45s ease !important;
+  will-change: transform !important;
+}
+
+.review-card {
+  position: relative !important;
+  flex: 0 0 calc((100% - 44px) / 3) !important;
+  min-height: 245px !important;
+  padding: 28px 28px 26px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(139, 220, 255, 0.22) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(145deg, rgba(8, 60, 92, 0.58), rgba(3, 28, 45, 0.42)) !important;
+  box-shadow: 0 22px 48px rgba(0, 8, 18, 0.22) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.review-card::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: radial-gradient(circle at 18% 0%, rgba(139, 220, 255, 0.12), transparent 35%) !important;
+  pointer-events: none !important;
+}
+
+.review-card::after {
+  content: "''" !important;
+  position: absolute !important;
+  right: 22px !important;
+  top: 2px !important;
+  color: rgba(139, 220, 255, 0.14) !important;
+  font-size: 82px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+.review-card:hover {
+  border-color: rgba(139, 220, 255, 0.5) !important;
+  background: linear-gradient(145deg, rgba(10, 71, 108, 0.66), rgba(3, 31, 50, 0.5)) !important;
+  transform: translateY(-6px) !important;
+}
+
+.stars {
+  position: relative !important;
+  z-index: 1 !important;
+  margin: 0 0 14px !important;
+  color: #ffd33d !important;
+  font-size: 17px !important;
+  letter-spacing: 2px !important;
+}
+
+.review-card h3,
+.review-card small,
+.review-card p {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.review-card h3 {
+  margin: 0 0 3px !important;
+  color: #fff !important;
+  font-size: 15px !important;
+  line-height: 1.1 !important;
+  font-weight: 700 !important;
+}
+
+.review-card small {
+  display: block !important;
+  margin: 0 0 18px !important;
+  color: #8bdcff !important;
+  font-size: 11px !important;
+  line-height: 1.1 !important;
+  font-weight: 500 !important;
+}
+
+.review-card p {
+  margin: 0 !important;
+  color: rgba(221, 241, 250, 0.84) !important;
+  font-size: 12px !important;
+  line-height: 1.52 !important;
+  font-weight: 400 !important;
+}
+
+.review-nav {
+  position: absolute !important;
+  top: 50% !important;
+  z-index: 3 !important;
+  transform: translateY(-50%) !important;
+}
+
+.review-nav:hover {
+  transform: translateY(-50%) scale(1.04) !important;
+}
+
+.review-prev {
+  left: 0 !important;
+}
+
+.review-next {
+  right: 0 !important;
+}
+
+@media (max-width: 980px) {
+  .project-grid {
+    grid-template-columns: 42px 1fr 42px !important;
+  }
+
+  .project-copy {
+    grid-column: 1 / -1 !important;
+  }
+
+  .review-card {
+    flex-basis: calc((100% - 22px) / 2) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects,
+  .testimonials {
+    padding: 42px 0 !important;
+  }
+
+  .project-grid {
+    grid-template-columns: 38px 1fr 38px !important;
+    gap: 12px !important;
+  }
+
+  .project-slider {
+    height: 190px !important;
+  }
+
+  .reviews-shell {
+    padding: 0 42px !important;
+  }
+
+  .review-card {
+    flex-basis: 100% !important;
+  }
+
+  .testimonials .section-head {
+    display: block !important;
+  }
+
+  .testimonials .section-head .btn {
+    margin-top: 18px !important;
+  }
+}
+
+/* TESTIMONIAL HOVER CLIP FIX */
+.testimonials .reviews-shell {
+  padding-top: 10px !important;
+  padding-bottom: 14px !important;
+}
+
+.testimonials .review-window {
+  overflow: hidden !important;
+  padding: 10px 0 14px !important;
+  margin: -10px 0 -14px !important;
+}
+
+.testimonials .review-card {
+  transform-origin: center !important;
+}
+
+.testimonials .review-card:hover {
+  transform: translateY(-5px) !important;
+}
+
+/* MODERN SERVICES THEME */
+.services {
+  position: relative !important;
+  overflow: hidden !important;
+  padding: clamp(52px, 4.7vw, 76px) 0 clamp(58px, 5vw, 82px) !important;
+  color: #eef9ff !important;
+  background:
+    radial-gradient(circle at 16% 6%, rgba(98, 190, 239, 0.16), transparent 30%),
+    radial-gradient(circle at 88% 28%, rgba(69, 168, 223, 0.12), transparent 28%),
+    linear-gradient(180deg, #062f4b 0%, #04263d 54%, #031c2e 100%) !important;
+  border-top: 1px solid rgba(139, 220, 255, 0.18) !important;
+  border-bottom: 1px solid rgba(139, 220, 255, 0.16) !important;
+}
+
+.services::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  height: auto !important;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px) !important;
+  background-size: 72px 72px !important;
+  border-radius: 0 !important;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.74), transparent 84%) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+.services::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(139, 220, 255, 0.72), transparent) !important;
+  pointer-events: none !important;
+}
+
+.services .container {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.services .section-head {
+  align-items: flex-end !important;
+  margin: 0 0 34px !important;
+  padding: 0 !important;
+}
+
+.services .eyebrow {
+  margin: 0 0 8px !important;
+  color: #8bdcff !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+.services .section-head h2 {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 35px !important;
+  line-height: 1.04 !important;
+  font-weight: 600 !important;
+}
+
+.services .section-head .btn {
+  min-height: 40px !important;
+  padding: 0 8px 0 20px !important;
+  border: 1px solid rgba(139, 220, 255, 0.32) !important;
+  border-radius: 999px !important;
+  color: #eef9ff !important;
+  background: rgba(139, 220, 255, 0.08) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 14px 30px rgba(0, 8, 18, 0.18) !important;
+}
+
+.services .section-head .btn span {
+  width: 28px !important;
+  height: 28px !important;
+  color: #05243a !important;
+  background: #8bdcff !important;
+}
+
+.service-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: clamp(24px, 2.6vw, 36px) clamp(24px, 3.1vw, 42px) !important;
+}
+
+.service-card {
+  position: relative !important;
+  min-height: 188px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(139, 220, 255, 0.2) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(145deg, rgba(8, 60, 92, 0.58), rgba(3, 28, 45, 0.42)) !important;
+  box-shadow: 0 22px 48px rgba(0, 8, 18, 0.24) !important;
+  backdrop-filter: blur(10px) !important;
+  isolation: isolate !important;
+}
+
+.service-card::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 34%, rgba(2, 18, 31, 0.2)),
+    radial-gradient(circle at 18% 0%, rgba(139, 220, 255, 0.12), transparent 34%) !important;
+  pointer-events: none !important;
+}
+
+.service-card::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  background: linear-gradient(180deg, transparent 42%, rgba(2, 18, 31, 0.3)) !important;
+  opacity: 0 !important;
+  transition: opacity 0.25s ease !important;
+  pointer-events: none !important;
+}
+
+.service-card > img {
+  width: 100% !important;
+  height: 142px !important;
+  object-fit: cover !important;
+  border-radius: 8px 8px 0 0 !important;
+  transition: transform 0.5s ease !important;
+}
+
+.service-card:hover {
+  border-color: rgba(139, 220, 255, 0.52) !important;
+  box-shadow: 0 28px 58px rgba(0, 8, 18, 0.32) !important;
+}
+
+.service-card:hover::after {
+  opacity: 1 !important;
+}
+
+.service-card:hover > img {
+  transform: scale(1.06) !important;
+}
+
+.service-label {
+  min-height: 46px !important;
+  padding: 0 14px 0 68px !important;
+  color: #eaf8ff !important;
+  background: linear-gradient(180deg, rgba(5, 45, 70, 0.96), rgba(3, 31, 50, 0.98)) !important;
+  border-top: 1px solid rgba(139, 220, 255, 0.16) !important;
+  border-radius: 0 0 8px 8px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+.service-label span {
+  left: 13px !important;
+  top: -17px !important;
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 13px !important;
+  background: linear-gradient(135deg, #8bdcff 0%, #45a8df 100%) !important;
+  box-shadow:
+    0 12px 22px rgba(4, 70, 108, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+}
+
+.service-label img {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.service-label strong {
+  color: #f3fbff !important;
+  font-size: 11px !important;
+  line-height: 1.12 !important;
+  font-weight: 700 !important;
+}
+
+@media (max-width: 980px) {
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .services .section-head {
+    display: block !important;
+  }
+
+  .services .section-head .btn {
+    margin-top: 18px !important;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .service-card {
+    min-height: 220px !important;
+  }
+
+  .service-card > img {
+    height: 170px !important;
+  }
+}
