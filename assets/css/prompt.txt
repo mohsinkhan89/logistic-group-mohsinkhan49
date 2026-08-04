@@ -6,4 +6,7 @@ prompt reference 002:
 
 prompt reference 003:
     update grid layout for ready-grid and enhance global h2 styles
+
+prompt reference 004:
+    add mission section styles to enhance layout and responsiveness
  

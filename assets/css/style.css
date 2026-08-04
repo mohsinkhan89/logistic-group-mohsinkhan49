@@ -5441,3 +5441,228 @@ h2,
   font-size: 35px !important;
   font-weight: 600 !important;
 }
+
+/* MISSION SECTION EXACT MATCH */
+.split-info {
+  position: relative !important;
+  overflow: hidden !important;
+  height: clamp(222px, 15.8vw, 300px) !important;
+  min-height: 300px !important;
+  padding: 0 !important;
+  background:
+    linear-gradient(90deg, rgba(4, 83, 139, 0.78) 0%, rgba(4, 63, 103, 0.72) 43%, rgba(2, 25, 42, 0.94) 43.1%, rgba(2, 18, 31, 0.98) 100%),
+    url("../img/banners/mission-vission.png") center center / cover no-repeat !important;
+  border-top: 1px solid rgba(129, 212, 255, 0.28) !important;
+  border-bottom: 1px solid rgba(129, 212, 255, 0.18) !important;
+}
+
+.split-info::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  inset: 0 auto 0 0 !important;
+  width: 53% !important;
+  background:
+    linear-gradient(90deg, rgba(5, 104, 171, 0.78) 0%, rgb(4 83 137) 70%, rgb(3 61 99) 100%), radial-gradient(circle at 20% 40%, rgb(122 210 255), #0000000d 26%) !important;
+  clip-path: polygon(0 0, 90% 0, 84% 100%, 0 100%) !important;
+  pointer-events: none !important;
+}
+
+.split-info::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  z-index: 2 !important;
+  top: -38px !important;
+  bottom: -38px !important;
+  left: 49.2% !important;
+  width: 0px !important;
+  background: rgba(117, 208, 255, 0.56) !important;
+  box-shadow: 0 0 26px rgba(97, 195, 248, 0.32) !important;
+  transform: rotate(10deg) !important;
+  transform-origin: center !important;
+  pointer-events: none !important;
+}
+
+.split-info .container {
+  position: relative !important;
+  z-index: 3 !important;
+  height: 100% !important;
+}
+
+.split-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr) !important;
+  align-items: start !important;
+  gap: clamp(50px, 7.2vw, 90px) !important;
+  height: 100% !important;
+  padding: clamp(26px, 2.25vw, 43px) 0 0 !important;
+}
+
+.split-grid > .info-panel,
+.split-grid > .info-panel:first-child,
+.split-grid > .info-panel:nth-child(2) {
+  position: static !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+.split-grid > .info-panel:first-child {
+  display: block !important;
+  padding-left: clamp(0px, 1vw, 8px) !important;
+}
+
+.split-grid > .info-panel:nth-child(2) {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) clamp(170px, 15.1vw, 220px) !important;
+  column-gap: clamp(24px, 3vw, 46px) !important;
+  align-items: start !important;
+}
+
+.info-title-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(12px, 1.35vw, 18px) !important;
+  margin: 0 0 clamp(12px, 1.1vw, 17px) !important;
+}
+
+.info-title-row .info-icon {
+  display: grid !important;
+  place-items: center !important;
+  flex: 0 0 clamp(38px, 3.5vw, 52px) !important;
+  width: clamp(38px, 3.5vw, 52px) !important;
+  height: clamp(38px, 3.5vw, 52px) !important;
+  border: 1px solid rgba(135, 219, 255, 0.6) !important;
+  border-radius: 50% !important;
+  color: #8edcff !important;
+  background: rgba(73, 171, 225, 0.12) !important;
+  box-shadow:
+    inset 0 0 0 clamp(4px, 0.5vw, 7px) rgba(6, 76, 122, 0.34),
+    0 0 24px rgba(81, 179, 236, 0.16) !important;
+  font-size: clamp(18px, 1.85vw, 27px) !important;
+}
+
+.info-title-row .eyebrow {
+  margin: 0 !important;
+  color: rgba(226, 246, 255, 0.88) !important;
+  font-size: clamp(13px, 1.25vw, 18px) !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  text-transform: uppercase !important;
+}
+
+.info-main > p:not(.eyebrow) {
+  max-width: clamp(340px, 34vw, 470px) !important;
+  margin: 0 0 clamp(16px, 1.5vw, 23px) !important;
+  color: rgba(231, 246, 253, 0.9) !important;
+  font-size: clamp(10px, 0.83vw, 12px) !important;
+  line-height: 1.46 !important;
+  font-weight: 400 !important;
+}
+
+.info-panel:nth-child(2) .info-main > p:not(.eyebrow) {
+  max-width: clamp(310px, 30vw, 420px) !important;
+}
+
+.info-main .btn {
+  min-height: clamp(30px, 2.65vw, 39px) !important;
+  padding: 0 8px 0 clamp(15px, 1.5vw, 22px) !important;
+  gap: clamp(10px, 1vw, 14px) !important;
+  border: 1px solid rgba(127, 212, 255, 0.48) !important;
+  border-radius: 999px !important;
+  color: #eaf8ff !important;
+  background: rgba(4, 40, 64, 0.58) !important;
+  box-shadow: 0 12px 24px rgba(0, 8, 18, 0.2) !important;
+  font-size: clamp(9px, 0.8vw, 11px) !important;
+  font-weight: 600 !important;
+}
+
+.info-main .btn span {
+  width: clamp(20px, 1.9vw, 28px) !important;
+  height: clamp(20px, 1.9vw, 28px) !important;
+  color: #b8ecff !important;
+  background: #082d47 !important;
+  font-size: clamp(10px, 0.9vw, 13px) !important;
+}
+
+.check-list {
+  justify-self: end !important;
+  width: clamp(170px, 15.1vw, 220px) !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: clamp(13px, 1.5vw, 20px) clamp(14px, 1.45vw, 20px) !important;
+  list-style: none !important;
+  border: 1px solid rgba(132, 214, 255, 0.42) !important;
+  border-radius: 12px !important;
+  color: #fff !important;
+  background: rgba(2, 28, 46, 0.42) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 16px 34px rgba(0, 8, 18, 0.16) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.check-list li {
+  position: relative !important;
+  margin: 0 0 clamp(11px, 1.25vw, 18px) !important;
+  padding-left: clamp(25px, 2.25vw, 32px) !important;
+  color: rgba(239, 249, 254, 0.96) !important;
+  font-size: clamp(9px, 0.77vw, 11px) !important;
+  line-height: 1.18 !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+}
+
+.check-list li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.check-list li::before {
+  content: "\2713" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  width: clamp(16px, 1.5vw, 22px) !important;
+  height: clamp(16px, 1.5vw, 22px) !important;
+  border: 1px solid rgba(134, 219, 255, 0.7) !important;
+  border-radius: 50% !important;
+  color: #8bdcff !important;
+  background: rgba(6, 74, 119, 0.2) !important;
+  font-size: clamp(8px, 0.8vw, 11px) !important;
+  font-weight: 900 !important;
+  transform: translateY(-50%) !important;
+}
+
+@media (max-width: 980px) {
+  .split-info {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .split-info::before,
+  .split-info::after {
+    display: none !important;
+  }
+
+  .split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    height: auto !important;
+    padding: 42px 0 !important;
+  }
+
+  .split-grid > .info-panel:nth-child(2) {
+    grid-template-columns: 1fr !important;
+  }
+
+  .check-list {
+    justify-self: start !important;
+    margin-top: 22px !important;
+  }
+}
