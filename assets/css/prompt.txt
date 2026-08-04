@@ -33,3 +33,6 @@ prompt reference 011:
 
 prompt reference 012:
     Add slider pagination for projects and reviews; refactor contact dropdown structure
+
+prompt reference 013:
+    Add flat quote icon for testimonial cards

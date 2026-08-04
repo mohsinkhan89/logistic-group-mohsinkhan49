@@ -8973,3 +8973,27 @@ body {
     min-height: 38px !important;
   }
 }
+
+/* Flat quote icon for testimonial cards */
+.review-card::after,
+.testimonials .review-card::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 16px !important;
+  right: 22px !important;
+  width: 52px !important;
+  height: 42px !important;
+  background: url("../img/icons/quote-flat.svg") center / contain no-repeat !important;
+  opacity: 0.18 !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+.review-card:hover::after,
+.testimonials .review-card:hover::after {
+  opacity: 0.26 !important;
+  transform: translateY(-2px) !important;
+}
