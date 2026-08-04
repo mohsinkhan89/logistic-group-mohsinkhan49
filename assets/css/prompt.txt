@@ -10,3 +10,5 @@ prompt reference 003:
 prompt reference 004:
     add mission section styles to enhance layout and responsiveness
  
+prompt reference 005:
+    add modern footer design and update contact information in index.html
