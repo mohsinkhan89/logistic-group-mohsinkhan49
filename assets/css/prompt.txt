@@ -30,3 +30,6 @@ prompt reference 010:
 
 prompt reference 011:
     Add dropdown menus for services and contact options in navigation
+
+prompt reference 012:
+    Add slider pagination for projects and reviews; refactor contact dropdown structure
