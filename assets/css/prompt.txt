@@ -1,2 +1,6 @@
 prompt reference 001:
     Update CSS for layout adjustments and responsiveness enhancements
+
+prompt reference 002:
+    Update service icons and adjust brand styles in CSS
+ 
