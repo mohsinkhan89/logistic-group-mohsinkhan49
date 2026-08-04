@@ -5376,7 +5376,7 @@ li,
   width: 23px !important;
   height: 23px !important;
   object-fit: contain !important;
-  filter: brightness(0) invert(1) !important;
+  filter: brightness(0) invert(0) !important;
   opacity: 0.98 !important;
 }
 
@@ -6533,5 +6533,605 @@ h2,
 
   .service-card > img {
     height: 170px !important;
+  }
+}
+
+/* MODERN READY + MISSION VISION FINAL */
+.ready {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 390px !important;
+  padding: clamp(54px, 5vw, 82px) 0 !important;
+  color: #eef9ff !important;
+  background:
+    linear-gradient(90deg, rgba(3, 24, 39, 0.96) 0%, rgba(3, 30, 49, 0.88) 42%, rgba(3, 24, 39, 0.44) 68%, rgba(3, 20, 32, 0.22) 100%),
+    url("../img/ready/ready-to-work.png") right center / cover no-repeat !important;
+  border-top: 1px solid rgba(139, 220, 255, 0.2) !important;
+  border-bottom: 1px solid rgba(139, 220, 255, 0.18) !important;
+}
+
+.ready::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(98, 190, 239, 0.18), transparent 30%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px) !important;
+  background-size: auto, 72px 72px, 72px 72px !important;
+  pointer-events: none !important;
+}
+
+.ready::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(139, 220, 255, 0.72), transparent) !important;
+}
+
+.ready .container {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.ready-grid {
+  display: grid !important;
+  grid-template-columns: minmax(320px, 0.78fr) minmax(420px, 1fr) !important;
+  align-items: center !important;
+  gap: clamp(36px, 5vw, 74px) !important;
+  min-height: 0 !important;
+}
+
+.ready-copy {
+  align-self: center !important;
+  padding: 30px !important;
+  border: 1px solid rgba(139, 220, 255, 0.2) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(145deg, rgba(8, 60, 92, 0.62), rgba(3, 28, 45, 0.46)) !important;
+  box-shadow: 0 24px 54px rgba(0, 8, 18, 0.26) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.ready-copy h2 {
+  margin: 0 0 14px !important;
+  color: #fff !important;
+  font-size: 35px !important;
+  line-height: 1.05 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+}
+
+.ready-copy p {
+  max-width: 430px !important;
+  margin: 0 0 24px !important;
+  color: rgba(221, 241, 250, 0.84) !important;
+  font-size: 13px !important;
+  line-height: 1.58 !important;
+  font-weight: 400 !important;
+}
+
+.ready-copy .btn {
+  min-height: 42px !important;
+  padding: 0 8px 0 21px !important;
+  border: 1px solid rgba(139, 220, 255, 0.36) !important;
+  color: #eef9ff !important;
+  background: rgba(139, 220, 255, 0.09) !important;
+  box-shadow: 0 14px 30px rgba(0, 8, 18, 0.2) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.ready-copy .btn span {
+  width: 29px !important;
+  height: 29px !important;
+  color: #05243a !important;
+  background: #8bdcff !important;
+}
+
+.ready-list {
+  justify-self: end !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  width: min(520px, 100%) !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.ready-list div {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 48px 1fr !important;
+  align-items: center !important;
+  column-gap: 14px !important;
+  min-height: 112px !important;
+  margin: 0 !important;
+  padding: 18px !important;
+  border: 1px solid rgba(139, 220, 255, 0.2) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(145deg, rgba(8, 60, 92, 0.6), rgba(3, 28, 45, 0.46)) !important;
+  box-shadow: 0 20px 42px rgba(0, 8, 18, 0.22) !important;
+  backdrop-filter: blur(12px) !important;
+  transition: transform 0.22s ease, border-color 0.22s ease !important;
+}
+
+.ready-list div:hover {
+  transform: translateY(-5px) !important;
+  border-color: rgba(139, 220, 255, 0.5) !important;
+}
+
+.ready-list span {
+  grid-row: span 2 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 48px !important;
+  height: 48px !important;
+  border: 1px solid rgba(139, 220, 255, 0.35) !important;
+  border-radius: 13px !important;
+  color: #05243a !important;
+  background: linear-gradient(135deg, #8bdcff 0%, #45a8df 100%) !important;
+  box-shadow: 0 12px 24px rgba(4, 70, 108, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  font-size: 20px !important;
+}
+
+.ready-list strong {
+  display: block !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  line-height: 1.12 !important;
+  font-weight: 700 !important;
+}
+
+.ready-list small {
+  display: block !important;
+  margin-top: 5px !important;
+  color: rgba(221, 241, 250, 0.8) !important;
+  font-size: 12px !important;
+  line-height: 1.25 !important;
+}
+
+.split-info {
+  position: relative !important;
+  overflow: hidden !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: clamp(54px, 5vw, 82px) 0 !important;
+  color: #eef9ff !important;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(98, 190, 239, 0.16), transparent 32%),
+    radial-gradient(circle at 86% 28%, rgba(69, 168, 223, 0.13), transparent 30%),
+    linear-gradient(180deg, #052d48 0%, #031f33 58%, #021724 100%) !important;
+  border-top: 1px solid rgba(139, 220, 255, 0.2) !important;
+  border-bottom: 1px solid rgba(139, 220, 255, 0.16) !important;
+}
+
+.split-info::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: auto !important;
+  clip-path: none !important;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px) !important;
+  background-size: 72px 72px !important;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.72), transparent 82%) !important;
+  pointer-events: none !important;
+}
+
+.split-info::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: auto !important;
+  width: auto !important;
+  height: 1px !important;
+  display: block !important;
+  background: linear-gradient(90deg, transparent, rgba(139, 220, 255, 0.72), transparent) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.split-info .container {
+  position: relative !important;
+  z-index: 2 !important;
+  height: auto !important;
+}
+
+.split-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: clamp(24px, 3vw, 38px) !important;
+  align-items: stretch !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+
+.split-grid > .info-panel,
+.split-grid > .info-panel:first-child,
+.split-grid > .info-panel:nth-child(2) {
+  position: relative !important;
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  padding: 30px !important;
+  border: 1px solid rgba(139, 220, 255, 0.2) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(145deg, rgba(8, 60, 92, 0.6), rgba(3, 28, 45, 0.46)) !important;
+  box-shadow: 0 24px 54px rgba(0, 8, 18, 0.24) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.info-title-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin: 0 0 18px !important;
+}
+
+.info-title-row .info-icon {
+  flex: 0 0 52px !important;
+  width: 52px !important;
+  height: 52px !important;
+  border: 1px solid rgba(139, 220, 255, 0.35) !important;
+  border-radius: 13px !important;
+  color: #05243a !important;
+  background: linear-gradient(135deg, #8bdcff 0%, #45a8df 100%) !important;
+  box-shadow: 0 12px 24px rgba(4, 70, 108, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  font-size: 23px !important;
+}
+
+.info-title-row .eyebrow {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  text-transform: uppercase !important;
+}
+
+.info-main > p:not(.eyebrow),
+.info-panel:nth-child(2) .info-main > p:not(.eyebrow) {
+  max-width: 100% !important;
+  margin: 0 0 24px !important;
+  color: rgba(221, 241, 250, 0.84) !important;
+  font-size: 13px !important;
+  line-height: 1.58 !important;
+  font-weight: 400 !important;
+}
+
+.info-main .btn {
+  min-height: 40px !important;
+  padding: 0 8px 0 20px !important;
+  border: 1px solid rgba(139, 220, 255, 0.34) !important;
+  border-radius: 999px !important;
+  color: #eef9ff !important;
+  background: rgba(139, 220, 255, 0.08) !important;
+  box-shadow: 0 14px 30px rgba(0, 8, 18, 0.18) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.info-main .btn span {
+  width: 28px !important;
+  height: 28px !important;
+  color: #05243a !important;
+  background: #8bdcff !important;
+}
+
+.check-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin: 24px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.check-list li {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 42px !important;
+  margin: 0 !important;
+  padding: 10px 12px 10px 38px !important;
+  border: 1px solid rgba(139, 220, 255, 0.18) !important;
+  border-radius: 8px !important;
+  color: rgba(239, 249, 254, 0.96) !important;
+  background: rgba(139, 220, 255, 0.07) !important;
+  font-size: 12px !important;
+  line-height: 1.15 !important;
+  font-weight: 600 !important;
+  white-space: normal !important;
+}
+
+.check-list li::before {
+  left: 12px !important;
+  top: 50% !important;
+  width: 18px !important;
+  height: 18px !important;
+  border: 1px solid rgba(139, 220, 255, 0.55) !important;
+  border-radius: 50% !important;
+  color: #8bdcff !important;
+  background: rgba(139, 220, 255, 0.1) !important;
+  font-size: 10px !important;
+  transform: translateY(-50%) !important;
+}
+
+@media (max-width: 980px) {
+  .ready-grid,
+  .split-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ready-list {
+    justify-self: stretch !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .ready,
+  .split-info {
+    padding: 42px 0 !important;
+  }
+
+  .ready-copy,
+  .split-grid > .info-panel,
+  .split-grid > .info-panel:first-child,
+  .split-grid > .info-panel:nth-child(2) {
+    padding: 22px !important;
+  }
+
+  .ready-list,
+  .check-list {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* RESTORE MISSION / VISION DIAGONAL SECTION */
+.split-info {
+  position: relative !important;
+  overflow: hidden !important;
+  height: clamp(260px, 21.5vw, 330px) !important;
+  min-height: 260px !important;
+  padding: 0 !important;
+  color: #eef9ff !important;
+  background:
+    linear-gradient(100deg, rgba(4, 91, 150, 0.78) 0%, rgba(4, 80, 132, 0.72) 43%, rgba(2, 30, 49, 0.93) 43.1%, rgba(2, 24, 39, 0.98) 100%),
+    url("../img/banners/mission-vission.png") center / cover no-repeat !important;
+  border-top: 1px solid rgba(129, 212, 255, 0.28) !important;
+  border-bottom: 1px solid rgba(129, 212, 255, 0.18) !important;
+}
+
+.split-info::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  inset: 0 auto 0 0 !important;
+  z-index: 1 !important;
+  width: 52.5% !important;
+  height: auto !important;
+  clip-path: polygon(0 0, 96% 0, 84% 100%, 0 100%) !important;
+  background:
+    linear-gradient(90deg, rgba(5, 104, 171, 0.68), rgba(4, 83, 137, 0.56)),
+    radial-gradient(circle at 20% 38%, rgba(122, 210, 255, 0.14), transparent 28%) !important;
+  mask-image: none !important;
+  pointer-events: none !important;
+}
+
+.split-info::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  z-index: 2 !important;
+  top: -38px !important;
+  bottom: -38px !important;
+  left: 49.2% !important;
+  right: auto !important;
+  width: 1px !important;
+  height: auto !important;
+  background: rgba(128, 214, 255, 0.5) !important;
+  box-shadow: 0 0 24px rgba(92, 190, 245, 0.24) !important;
+  transform: rotate(10deg) !important;
+  pointer-events: none !important;
+}
+
+.split-info .container {
+  position: relative !important;
+  z-index: 3 !important;
+  height: 100% !important;
+}
+
+.split-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
+  align-items: start !important;
+  gap: clamp(54px, 6vw, 82px) !important;
+  height: 100% !important;
+  padding: clamp(34px, 3.2vw, 48px) 0 0 !important;
+}
+
+.split-grid > .info-panel,
+.split-grid > .info-panel:first-child,
+.split-grid > .info-panel:nth-child(2) {
+  position: static !important;
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.split-grid > .info-panel:nth-child(2) {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) clamp(180px, 16vw, 220px) !important;
+  column-gap: clamp(26px, 3vw, 42px) !important;
+  align-items: start !important;
+}
+
+.info-title-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(12px, 1.25vw, 18px) !important;
+  margin: 0 0 clamp(13px, 1.2vw, 18px) !important;
+}
+
+.info-title-row .info-icon {
+  display: grid !important;
+  place-items: center !important;
+  flex: 0 0 clamp(40px, 3.7vw, 52px) !important;
+  width: clamp(40px, 3.7vw, 52px) !important;
+  height: clamp(40px, 3.7vw, 52px) !important;
+  border: 1px solid rgba(135, 219, 255, 0.6) !important;
+  border-radius: 50% !important;
+  color: #8edcff !important;
+  background: rgba(73, 171, 225, 0.12) !important;
+  box-shadow: inset 0 0 0 6px rgba(6, 76, 122, 0.3), 0 0 24px rgba(81, 179, 236, 0.14) !important;
+  font-size: clamp(18px, 1.8vw, 26px) !important;
+}
+
+.info-title-row .eyebrow {
+  margin: 0 !important;
+  color: rgba(226, 246, 255, 0.88) !important;
+  font-size: clamp(14px, 1.25vw, 18px) !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+}
+
+.info-main > p:not(.eyebrow),
+.info-panel:nth-child(2) .info-main > p:not(.eyebrow) {
+  max-width: 440px !important;
+  margin: 0 0 clamp(16px, 1.5vw, 22px) !important;
+  color: rgba(231, 246, 253, 0.9) !important;
+  font-size: clamp(10px, 0.86vw, 12px) !important;
+  line-height: 1.47 !important;
+  font-weight: 400 !important;
+}
+
+.info-panel:nth-child(2) .info-main > p:not(.eyebrow) {
+  max-width: 400px !important;
+}
+
+.info-main .btn {
+  min-height: clamp(31px, 2.65vw, 39px) !important;
+  padding: 0 8px 0 clamp(16px, 1.45vw, 22px) !important;
+  gap: 12px !important;
+  border: 1px solid rgba(127, 212, 255, 0.46) !important;
+  border-radius: 999px !important;
+  color: #eaf8ff !important;
+  background: rgba(4, 40, 64, 0.58) !important;
+  box-shadow: 0 12px 24px rgba(0, 8, 18, 0.2) !important;
+  font-size: clamp(9px, 0.8vw, 11px) !important;
+  font-weight: 600 !important;
+}
+
+.info-main .btn span {
+  width: clamp(20px, 1.9vw, 28px) !important;
+  height: clamp(20px, 1.9vw, 28px) !important;
+  color: #b8ecff !important;
+  background: #082d47 !important;
+}
+
+.check-list {
+  justify-self: end !important;
+  display: block !important;
+  width: clamp(180px, 16vw, 220px) !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: clamp(14px, 1.45vw, 20px) !important;
+  list-style: none !important;
+  border: 1px solid rgba(132, 214, 255, 0.38) !important;
+  border-radius: 12px !important;
+  background: rgba(2, 28, 46, 0.42) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 16px 34px rgba(0, 8, 18, 0.16) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.check-list li {
+  position: relative !important;
+  display: block !important;
+  min-height: 0 !important;
+  margin: 0 0 clamp(11px, 1.1vw, 16px) !important;
+  padding: 0 0 0 clamp(25px, 2.25vw, 32px) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  color: rgba(239, 249, 254, 0.96) !important;
+  background: transparent !important;
+  font-size: clamp(9px, 0.78vw, 11px) !important;
+  line-height: 1.18 !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+}
+
+.check-list li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.check-list li::before {
+  content: "\2713" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  width: clamp(16px, 1.45vw, 20px) !important;
+  height: clamp(16px, 1.45vw, 20px) !important;
+  border: 1px solid rgba(134, 219, 255, 0.68) !important;
+  border-radius: 50% !important;
+  color: #8bdcff !important;
+  background: rgba(6, 74, 119, 0.2) !important;
+  font-size: clamp(8px, 0.78vw, 10px) !important;
+  transform: translateY(-50%) !important;
+}
+
+@media (max-width: 980px) {
+  .split-info {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 42px 0 !important;
+  }
+
+  .split-info::before,
+  .split-info::after {
+    display: none !important;
+  }
+
+  .split-grid,
+  .split-grid > .info-panel:nth-child(2) {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+    gap: 28px !important;
+    padding: 0 !important;
+  }
+
+  .check-list {
+    justify-self: start !important;
+    margin-top: 22px !important;
   }
 }

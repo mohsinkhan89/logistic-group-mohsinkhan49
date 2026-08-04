@@ -15,3 +15,6 @@ prompt reference 005:
 
 prompt reference 006:
     add modern portfolio and testimonials styles
+
+prompt reference 007:
+    update vision statement in index.html and adjust related content
