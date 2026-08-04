@@ -27,3 +27,6 @@ prompt reference 009:
 
 prompt reference 010:
     enhance header and site-wide styles; update icons and animations for improved UI
+
+prompt reference 011:
+    Add dropdown menus for services and contact options in navigation
