@@ -5072,7 +5072,7 @@ li,
 
 /* CONTAINER LAYOUT FINAL */
 :root {
-  --site-container: 1240px;
+  --site-container: 1340px;
   --site-gutter: 42px;
 }
 
@@ -8172,7 +8172,7 @@ body {
   }
 
   .site-header .container {
-    width: min(1888px, calc(100% - 112px)) !important;
+    width: min(1540px, calc(100% - 112px)) !important;
     max-width: 1888px !important;
     height: 96px !important;
   }
